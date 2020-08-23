@@ -157,13 +157,13 @@ class App extends React.Component{
 
 const Powerswitch = (props) => {
   return (
-    <div class="switch">
-      <span class="switch-title">{props.text}</span>
+    <div className="switch">
+      <span className="switch-title">{props.text}</span>
       <div className="select" >
-      <label class="switch__label">
-        <input type="checkbox" class="switch__input" onClick={props.onClickPower}/>
-          <span class="switch__content"></span>
-          <span class="switch__circle"></span>
+      <label className="switch__label">
+        <input type="checkbox" className="switch__input" onClick={props.onClickPower}/>
+          <span className="switch__content"></span>
+          <span className="switch__circle"></span>
       </label>
       </div>
     </div>
@@ -172,7 +172,7 @@ const Powerswitch = (props) => {
 
 const Volume = (props) => {
   return(
-    <div class="volume">
+    <div className="volume">
       <input type="range" min="0" max="1" step="0.01" value={props.sliderVal} onChange={props.onClickVolume} />
     </div>
   )
@@ -191,7 +191,7 @@ const Bankswitch = (props) => {
       <span className="switch-title">{props.text}</span>
       <div className="select" >
       <label className="switch__label" >
-        <input type="checkbox" class="switch__input" onClick={props.onClickBank}/>
+        <input type="checkbox" className="switch__input" onClick={props.onClickBank}/>
           <span className="switch__content"></span>
           <span className="switch__circle"></span>
       </label>
@@ -296,11 +296,6 @@ const keySmoothPianoKit = [{
   id: 'Snare',
   url: 'https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3'
 }];
-
-const switchBank = [
-  "Heater Kit",
-  "Smooth Piano Kit"
-]
 
 
 export default App;
